@@ -1,0 +1,45 @@
+.modalTitle
+{
+    font-weight: bold;
+    padding: 16px 15px;
+    font-size: 1.2em;
+    background: #eee;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Poppins','Lato',sans-serif;
+    font-size: 18px !important;
+    text-align: center!important;
+}
+
+.profileinfo
+{
+    box-shadow: 0px 0px 50px rgb(0 0 0 / 10%);
+    background: #FEFEFE;
+    overflow: auto;
+    padding: 25px;
+}
+
+.awardsAtrributes
+{
+    font-size: 19px;
+    font-family: 'Poppins','Lato',sans-serif;
+}
+
+.awardCategory
+{
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+    color: #444;
+    font-family: 'Poppins','Lato',sans-serif;
+    width:19%;
+}
+
+.badges
+{
+    width:60px;
+}
+
+button.btn-close
+{
+    color:#fd7400;
+}
