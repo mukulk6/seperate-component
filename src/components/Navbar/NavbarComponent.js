@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styles from './NavbarComponent.module.css';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -17,20 +17,20 @@ const NavbarComponent = () => {
   const handleShow = () => setShow(true);
 
   const avatarDropdownsList = {
-    paddingTop:'5px',
+    paddingTop: '5px',
     fontSize: '12px',
-    height:'27px',
-    width:'300px',
-    maxWidth:'200px',
-    fontWeight:'normal'
+    height: '27px',
+    width: '300px',
+    maxWidth: '200px',
+    fontWeight: 'normal'
   }
 
   const avatarIcons = {
-    paddingRight:'5px'
+    paddingRight: '5px'
   }
   return (
     <nav class="navbar navbar-default navbar-light bg-light navbar-expand-lg fixed-top">
-    {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> */}
       <a class="navbar-brand" href="#" className={styles.brandImg}><img src={require('../images/vizerto.png')}></img>
@@ -85,21 +85,21 @@ const NavbarComponent = () => {
           </div>
         </li>
         <li class="nav-item">
-        {/* <div class="user-icon">
+          {/* <div class="user-icon">
         <Avatar alt="Remy Sharp" src={require('../images/vizerto.png')} sx={{ width: 35, height: 35, cursor:'pointer', marginTop:'5px' }} />
         </div> */}
-        <NavDropdown title={<div class="user-icon"><Avatar alt = "Remy Sharp" src= {require('../images/vizerto.png')} /></div>}>
-        <NavDropdown.Item style={avatarDropdownsList} href="/openseeker"><i style={avatarIcons} class="fa fa-user" aria-hidden="true"></i>Profile</NavDropdown.Item>
-        <NavDropdown.Item style={avatarDropdownsList}><i style={avatarIcons} class="fa-solid fa-heart"></i>Favorite</NavDropdown.Item>
-        <NavDropdown.Item style={avatarDropdownsList}><i style={avatarIcons} class="fa-solid fa-share-nodes"></i>Question shared</NavDropdown.Item>
-        <NavDropdown.Item style={avatarDropdownsList}><i style={avatarIcons} class="fa-solid fa-right-from-bracket"></i>Logout</NavDropdown.Item>
-        </NavDropdown>
+          <NavDropdown title={<div class="user-icon"><Avatar alt="Remy Sharp" src={require('../images/vizerto.png')} /></div>}>
+            <NavDropdown.Item style={avatarDropdownsList} href="/openseeker"><i style={avatarIcons} class="fa fa-user" aria-hidden="true"></i>Profile</NavDropdown.Item>
+            <NavDropdown.Item style={avatarDropdownsList}><i style={avatarIcons} class="fa-solid fa-heart"></i>Favorite</NavDropdown.Item>
+            <NavDropdown.Item style={avatarDropdownsList}><i style={avatarIcons} class="fa-solid fa-share-nodes"></i>Question shared</NavDropdown.Item>
+            <NavDropdown.Item style={avatarDropdownsList}><i style={avatarIcons} class="fa-solid fa-right-from-bracket"></i>Logout</NavDropdown.Item>
+          </NavDropdown>
         </li>
         <li class="nav-item">
           <div class="dropdown dropdown-right">
             <div className={styles.userinfo}>
               <div class="clearfix">
-                <span>Mukul Kale</span> 
+                <span>Mukul Kale</span>
                 <select class="form-select form-select-sm" aria-label=".form-select-lg example">
                   <option value="1">Admin</option>
                   <option value="2">CM</option>
@@ -120,8 +120,8 @@ const NavbarComponent = () => {
           </div>
         </li>
       </ul>
-    
-  </nav> 
+
+    </nav>
   )
 };
 

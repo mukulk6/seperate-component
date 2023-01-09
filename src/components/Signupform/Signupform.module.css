@@ -1,0 +1,11 @@
+input#firstName, input#lastName, input#email
+{
+    display: block;
+    width:100%;
+}
+
+#btnsubmit
+{
+    padding-top: 5px;
+    margin-top: 10px;
+}
